@@ -1,0 +1,35 @@
+{% extends "servergeodata/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- Описание компании -->
+<div class="container mb-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <!-- Заголовок проекта и большая картинка -->
+            <h1 class="text-center mb-4">Проект разметки геоданных</h1>
+            <img src="{% static 'servergeodata/images/map.png' %}" class="img-fluid" alt="Проект разметки геоданных">
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-8 offset-md-2">
+            <!-- Дополнительное описание -->
+            <p class="lead text-center">
+                Проект №1
+            </p>
+            <!-- Дополнительная информация -->
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Описание проекта</h5>
+                    <p class="card-text">
+                        Наш проект предоставляет простой и интуитивно понятный интерфейс для разметки геоданных.
+                        Мы предлагаем мощные инструменты для работы с картами, а также гарантируем точность результатов.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

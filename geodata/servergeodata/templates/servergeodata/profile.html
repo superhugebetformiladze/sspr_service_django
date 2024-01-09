@@ -1,0 +1,57 @@
+{% extends "servergeodata/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- Описание компании -->
+<div class="container mb-4" style="margin-top: 100px;">
+    <div class="row">
+        <div class="col-md-12">
+            <!-- Информация о компании -->
+            <h2>Личный кабинет</h2>
+            <p>
+                Ваши проекты:
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Пример 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <a href="{% url 'project' %}">
+                    <img src="{% static 'servergeodata/images/map.png' %}" class="card-img-top" alt="Пример 1">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Место 1</h5>
+                    <p class="card-text">Описание размеченной части на карте.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Пример 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <a href="{% url 'project' %}">
+                    <img src="{% static 'servergeodata/images/map.png' %}" class="card-img-top" alt="Пример 1">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Место 2</h5>
+                    <p class="card-text">Доп описание размеченной части на карте.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Пример 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <a href="{% url 'project' %}">
+                    <img src="{% static 'servergeodata/images/map.png' %}" class="card-img-top" alt="Пример 1">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Место 3</h5>
+                    <p class="card-text">Еще одно описание размеченной части на карте.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

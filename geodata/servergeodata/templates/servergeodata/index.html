@@ -1,0 +1,30 @@
+{% extends "servergeodata/base.html" %}
+
+{% block content %}
+
+
+<div class="container mb-4" style="margin-top: 100px;">
+    <div class="row">
+        <div class="col-md-12">
+            <!-- Информация о сервисе разметки геоданных -->
+            <h2>Сервис разметки геоданных</h2>
+            <p>
+                Наш сервис предоставляет возможность удобной разметки географических данных.
+                Воспользуйтесь текстовым полем в левой части для ввода или вставки ваших данных,
+                а в правой части вы можете использовать карту для визуализации географических объектов.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Первый блок - текстовое поле -->
+            <textarea class="form-control" rows="10"></textarea>
+        </div>
+        <div class="col-md-6">
+            <!-- Второй блок - карта -->
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad662ecbd0712c2ae73a0b65968cb0cadae77e8ed8f5fcb72a42d237afd5bd01b&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true%22%3E"></script>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
